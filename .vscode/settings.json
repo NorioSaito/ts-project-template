@@ -1,0 +1,18 @@
+{
+  "editor.tabSize": 4,
+  "editor.insertSpaces": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [
+    { "directory": "front", "changeProcessCWD": true },
+    { "directory": "backend", "changeProcessCWD": true },
+    { "directory": "infra", "changeProcessCWD": true }
+  ]
+}

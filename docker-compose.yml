@@ -1,0 +1,13 @@
+services:
+  front:
+    build:
+      context: .
+      dockerfile: ./Dockerfile_front
+    container_name: nftProjectFront
+    volumes:
+      - ${LOCAL_WORKSPACE_FOLDER}/front:/front
+    environment:
+      - WATCHPACK_POLLING=true
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "3000:3000"
